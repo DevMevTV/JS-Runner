@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "jsmc",
+  "version": "${version}",
+
+  "name": "JsMc",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/jsmc/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.devmevtv.jsmc.client.JsMcClient"],
+    "main": ["de.devmevtv.jsmc.Jsmc"]
+  },
+
+  "mixins": [
+    "jsmc.mixins.json"
+    ,{
+      "config": "jsmc.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
