@@ -60,6 +60,8 @@ dependencies {
     implementation 'com.caoccao.javet:javet-v8-macos-x86_64-i18n:4.1.1'
     implementation 'com.caoccao.javet:javet-v8-windows-x86_64:4.1.1'
     implementation 'com.caoccao.javet:javet-v8-windows-x86_64-i18n:4.1.1'
+
+    modImplementation "org.json:json:20240205"
 }
 
 processResources {
